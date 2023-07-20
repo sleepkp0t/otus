@@ -1,0 +1,11 @@
+[Unit]
+Description=Prometheus Nginx Exporter
+Wants=network-online.target
+After=network-online.target
+[Service]
+#User=node_exporter
+#Group=node_exporter
+Type=simple
+ExecStart=/usr/local/bin/nginx-prometheus-exporter -nginx.scrape-uri=http://chobod.ru/nginx_stats
+[Install]
+WantedBy=multi-user.target

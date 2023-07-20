@@ -1,0 +1,12 @@
+[Unit]
+Description=PHP-FPM Node Exporter
+After=network.target
+
+[Service]
+Type=simple
+#User=php-exporter
+#Group=php-exporter
+#Nice=-5
+
+ExecStart =/usr/local/bin/php-fpm_exporter server --phpfpm.scrape-uri unix:///run/php/php8.0-fpm.sock;/fpm_status 
+

@@ -1,0 +1,6 @@
+- targets:
+  - ya.ru
+  - 79.133.182.241
+  - 127.0.0.1
+  labels:
+    alias: ping

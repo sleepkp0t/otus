@@ -1,0 +1,5 @@
+- targets:
+  - chobod.ru
+  - ya.ru
+  labels:
+    alias: http

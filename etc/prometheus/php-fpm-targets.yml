@@ -1,0 +1,5 @@
+- targets:
+   - f3.mydomain.com:9114
+  labels:
+    env: staging
+    job: php-fpm-exporter
