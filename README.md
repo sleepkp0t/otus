@@ -3,6 +3,7 @@
 
 Описание
 В репозитории находится структура файлов настроек prometheus для VM/Baremetal вариантов установки.
+Весь стек: nginx + MySql + php-fpm + BoltCMS. Экспортеры: blackbox, nginx, mysql, node, php-fpm
 
 Структура каталогов
 
